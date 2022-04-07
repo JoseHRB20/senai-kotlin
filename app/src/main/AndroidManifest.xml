@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.kotlinSenai" >
+    package="com.example.kotlinSenai">
 
     <application
         android:allowBackup="true"
@@ -8,25 +8,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FirstApplication" >
+        android:theme="@style/Theme.FirstApplication">
         <activity
-            android:name="com.example.kotlinSenai.ui.Splash"
-            android:theme="@style/SplashTheme"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.example.kotlinSenai.ResultActivity"
+            android:name=".SignUpActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.kotlinSenai.DrawerActivity"
+            android:name=".ui.Splash"
             android:exported="true"
-            android:label="@string/title_activity_drawer"
-            android:theme="@style/Theme.FirstApplication.NoActionBar" >
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,8 +23,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.kotlinSenai.MainActivity"
-            android:exported="true" >
+            android:name=".ResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DrawerActivity"
+            android:exported="true"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/Theme.FirstApplication.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
